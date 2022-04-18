@@ -1,28 +1,156 @@
+@font-face {
+  font-family: "murder";
+  src: url("fonts/youmurdererbb_reg.ttf") format("truetype");
+}
+
+.shakey {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.shakey:hover a {
+  animation: shake 0.8s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  15% {
+    transform: translateX(0.1em);
+  }
+  30% {
+    transform: translate(-0.1em);
+  }
+  45% {
+    transform: translateX(0em);
+  }
+  60% {
+    transform: translateX(0.1em);
+  }
+  75% {
+    transform: translateX(-0.1em);
+  }
+  100% {
+    transform: translateX(0em);
+  }
+}
+
+em {
+  display: inline;
+  color: var(--bloody);
+}
+
+:root {
+  --bloody: #ae080a;
+}
+
 * {
   margin: 0;
   padding: 0;
   display: block;
+  font-family: "murder";
 }
 
 .logo {
   border-radius: 50%;
+  max-height: 2em;
 }
 
 .nav-items {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: aqua;
+  position: relative;
+}
+
+.media_images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.images {
+  width: 45%;
+  padding-left: 2%;
+  padding-bottom: 2%;
+}
+
+.sticky {
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+title {
+  display: none;
 }
 
 .nav-item {
-  font-size: 2em;
-  background-color: lightcyan;
+  font-size: 3em;
+}
+
+.nav-item2 {
+  left: 25%;
+  top: 25%;
+}
+
+.nav-item3 {
+  left: 50%;
+  top: 25%;
+}
+
+.nav-item4 {
+  left: 75%;
+  top: 25%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }
 
 footer {
-  background-color: blue;
-  color: aliceblue;
   font-size: 2em;
   text-align: center;
+}
+
+p {
+  font-size: 4em;
+  padding-bottom: 10%;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+h3 {
+  font-size: 5em;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .images {
+    width: 100%;
+  }
+
+  p {
+    font-size: 2em;
+  }
+
+  .nav-item {
+    font-size: 2em;
+  }
+
+  footer {
+    font-size: 1em;
+  }
 }

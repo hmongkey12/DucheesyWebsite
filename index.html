@@ -8,42 +8,42 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <nav>
+    <nav class="sticky">
       <ol class="nav-items">
-        <li>
+        <li class="nav-item">
           <img class="logo" src="images/Ducheesy.svg" alt="Ducheesy Logo" />
         </li>
-        <li class="nav-item"><a href="#"></a> Game</li>
-        <li class="nav-item"><a href="#"></a> Dev Blog</li>
-        <li class="nav-item"><a href="#"></a> Media</li>
+        <li class="nav-item nav-item2 shakey"><a href="#game">Game</a></li>
+        <li class="nav-item nav-item3 shakey">
+          <a href="blog.html">Dev Blog</a>
+        </li>
+        <li class="nav-item nav-item4 shakey"><a href="#media">Media</a></li>
       </ol>
     </nav>
     <div>
-      <img src="images/duckrace.jpeg" alt="Duck Swimming in Water" />
+      <img src="images/duckrace.png" alt="Ducks Swimming in Water" />
     </div>
 
-    <article>
+    <article id="game">
+      <h3>Introduction</h3>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas veniam
-        quod accusamus esse maiores natus fuga cumque. Libero provident, esse
-        aspernatur minima, dignissimos officiis exercitationem minus inventore
-        hic, repellat quaerat. Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Sit temporibus magni officia iure eligendi ipsa eum
-        provident. Vel, aliquid amet animi ipsa omnis, debitis sit blanditiis,
-        vero iure quas soluta. Lorem, ipsum dolor sit amet consectetur
-        adipisicing elit. Voluptatum ex, eius voluptate, dignissimos excepturi
-        iste nesciunt sapiente consequuntur, impedit magnam voluptas placeat
-        debitis eligendi quasi aut nam est fugit recusandae?
+        <em>Ducheesy</em> was inspired as a simpler version of the Indian game
+        called “Pachisi" and the American version called “Parcheesi”. Combined
+        with the adrenaline of live action racing from the most addictive game
+        <em>The Duck Race</em> Ducheesy has become one of the most competitive
+        games ever created. Join the ducks on an epic adventure of love found
+        and love lost, as they race to freedom and escape the river
+        <em>Styx</em>.
       </p>
     </article>
-    <section>
-      <img src="images/gameplay1.png" alt="Gameplay 1" />
-      <img src="images/gameplay2.png" alt="Gameplay 2" />
-      <img src="images/gameplay3.png" alt="Gameplay 3" />
-      <img src="images/gameplay4.png" alt="Gameplay 4" />
-    </section>
-    <section>
-      <video src="videos/Ducheesy Demo.mov" type="video/mov" controls>
+    <section id="media">
+      <ol class="media_images">
+        <img src="images/gameplay1.png" class="images" alt="Gameplay 1" />
+        <img src="images/gameplay2.png" class="images" alt="Gameplay 2" />
+        <img src="images/gameplay3.png" class="images" alt="Gameplay 3" />
+        <img src="images/gameplay4.png" class="images" alt="Gameplay 4" />
+      </ol>
+      <video src="videos/Ducheesy Demo.mov" type="video/mov" controls autoplay>
         Sorry, your weak browser doesn't support videos.
       </video>
     </section>
